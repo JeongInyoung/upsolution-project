@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+<title></title>
+<style>
+/*mailing*/
+caption {display: none;}
+table th, table td, p, span, address {font-family: NanumGothic, Nanum Gothic, Verdana, Arial;}
+.mailing, .list {border-collapse: collapse; border-spacing: 0; font-size: 14px;}
+.mailing th.logo, .mailing th.slogan {border-bottom: 4px solid #23272A; padding-top: 14px; padding-left: 20px;}
+.mailing th.logo {height: 70px; text-align: left;}
+.mailing th.slogan {text-align: right;}
+.memo_img {text-align: center;}
+.memo {height: 265px; padding-top: 20px; font-size: 18px; line-height: 30px; background: none;}
+.list th, .list td {padding: 10px 20px; border-top: 1px solid #cdcdcd;}
+.list td {line-height: 26px; border-left: 1px solid #cdcdcd;}
+.Inquiry, .copy {font-family: Verdana, Arial;}
+.Inquiry {font-size: 16px; color: #999; height: 160px; background: url(http://p2c.co.kr/Common/Images/mail/inquiry_img.jpg) 20px 10px #f8f8f8 no-repeat; padding: 0 20px 0 230px; }
+.Inquiry .phone {font-size: 20px; color: #000;}
+.Inquiry .phone strong {display: inline-block; background: url(http://p2c.co.kr/Common/Images/common/bg_bar_gray.gif) 0px 6px no-repeat; padding-left: 10px;
+	margin-left: 5px; margin-right: 20px; color: #777;}
+.copy_logo, .copy {height: 160px; background: url(http://p2c.co.kr/Common/Images/common/top_menu_pattern.gif); line-height: 160px;}
+.copy_logo {text-align: center;}
+.copy {line-height: 26px; font-size: 12px; color: #999;}
+.line {height: 50px; border-top: 1px solid #cdcdcd;}
+/* btn*/
+a {display: inline-block; min-width: 90px;}
+a:link, a:visited, a:active, a:hover { text-decoration:none; }
+a.btn-black {padding: 6px 12px;line-height: 1.428571429;text-align: center;white-space: nowrap;border: 1px solid transparent;vertical-align: middle;cursor: pointer;font-size:14px;color:#fff;background-color:#555;border-color:#4b4b4b;border-radius: 4px;} 
+a.btn-black:hover,a.btn-black:focus,a.btn-black:active,a.btn-black.active {color:#fff;background-color:#3c3c3c;border-color:#131313;}
+</style>
+</head>
+<body>
+<center>
+	<table class="mailing" width="780" border="0">
+		<colgroup>
+			<col style="width:230px">
+			<col>
+		</colgroup>
+		<tr>
+			<th class="logo"><img src="http://p2c.co.kr/Common/images/mail/top_logo.gif" alt="P2C E-mailing" /></th>
+			<th class="slogan"><img src="http://p2c.co.kr/Common/images/mail/top_slogan.gif" alt="P2C slogan" /></th>
+		</tr>
+		<tr>
+			<th class="memo_img"><img src="http://p2c.co.kr/Common/images/mail/icon_receieved.gif" alt="" /></th>
+			<td class="memo"><b>#[CONTACT_NAME]</b>님! 안녕하세요?<br>
+				고객님의 #[DATE] 상담문의 답변입니다.<br>
+				더 궁금하신 내용은 홈페이지 문의 <br>
+				또는 전화문의 하시면 친절히 답변해 드리겠습니다.<br>
+				문의하여 주셔서 감사합니다.</td>
+		</tr>
+		<tr>
+			<td colspan="2"><table class="list" width="780" border="0">
+					<caption>상담문의 내역</caption>
+					<colgroup>
+						<col style="width:160px">
+						<col>
+					</colgroup>
+					<tr>
+						<th>모델명</th>
+						<td>#[MODEL_NAME]</td>
+					</tr>
+					<tr>
+						<th>문의</th>
+						<td>#[MESSAGE]</td>
+					</tr>
+					<tr>
+						<th>답변</th>
+						<td>#[REPLY]</td>
+					</tr>
+					<tr>
+						<th>첨부파일</th>
+						<td>#[FILE_NAME]</td>
+					</tr>
+				</table></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="line"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="Inquiry"><p>이제 당신의 사업파트너를 결정 할 때 입니다. <span><strong class="p2c">P<em>2</em>C</strong>와 상의하세요!</span></p>
+				<p class="phone">문의처 <a href="tel:+82-70-4469-3781"><strong>070-4469-3781</strong></a><a href="http://p2c.co.kr/contactus/inquiry_write" class="btn btn-black">상담하기</a></p>
+				</div></td>
+		</tr>
+		<tr>
+			<th class="copy_logo"><img src="http://p2c.co.kr/Common/images/mail/foot_logo.png" alt="P2C E-mailing" /></th>
+			<td class="copy"><address>서울시 금천구 가산디지털 1로 168 (우림라이온스밸리 A동 1001호)
+				</address>
+				<span>Tel. 02-4469-3781</span> <span>Fax. 02-830-6430</span> <span>Mail. sales@p2c.co.kr</span></br>www.p2c.co.kr</br>
+				Copyright © 2014 P2C all rights reserved.</br></td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>

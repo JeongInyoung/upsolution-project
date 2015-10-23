@@ -1,0 +1,82 @@
+=top-button($color-gray: null, $color-gray-hover: null, $color-white: null, $color-white-hover: null)
+	color: $color-gray
+	color: $color-white
+	&:hover
+		color: $color-gray-hover
+		color: $color-white-hover
+
+.top-button
+	@include grid-span(12, 1)
+	font-size: 30px  
+	text-align: right
+	letter-spacing: -0.05em
+	@include top-button(#aaa, #00aeef)
+
+.top-button-white 
+	@extend .top-button
+	@include top-button($color-white: #fff, $color-white-hover: $gray-dark)
+
+// Button Style
+=btn-size ($w: null, $h: null, $p: null)
+	position: relative
+	display: inline-block
+	min-width: $w
+	padding: $p
+	height: $h
+	line-height: $h - 2px
+	@media screen and (-webkit-min-device-pixel-ratio:0)
+		line-height: $h
+	box-sizing: border-box
+	[class^="icon-"]
+		line-height: $h - 2px
+		vertical-align: middle
+		@media screen and (-webkit-min-device-pixel-ratio:0)
+			line-height: $h
+			vertical-align: sub
+
+=btn($icon-size: null, $font-size: null, $font-color: null, $bg-color: null, $bg-darken: null, $border-color: null, $border-darken: null, $radius: null)
+	font-size: 14px
+	font-size: $font-size
+	color: $font-color
+	text-align: center
+	@include border-radius(4px)
+	@include border-radius($radius)
+	background: $bg-color
+	border: 1px solid $border-color
+	z-index: 999
+	[class^="icon-"]
+		color: $font-color
+		font-size: $icon-size
+		vertical-align: middle
+		@media screen and (-webkit-min-device-pixel-ratio:0)
+			vertical-align: sub
+	&:hover,
+	&:active,
+	&:focus
+		color: $font-color
+		background: darken($bg-color, $bg-darken)
+		border: 1px solid darken($border-color, $border-darken)
+		@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2))
+		[class^="icon-"]
+			color: $font-color
+			vertical-align: middle
+			@media screen and (-webkit-min-device-pixel-ratio:0)
+				vertical-align: sub
+
+.button-default
+	@include btn($font-color: $gray, $bg-color: $white, $bg-darken: 4%, $border-color:#bcbcbc, $border-darken: 4%, $radius: 3px)
+
+.button-blue
+	@include btn($font-color: $white, $bg-color: $up-blue, $bg-darken: 4%, $border-color:darken($up-blue, 10%), $border-darken: 8%, $radius: 10px)
+
+.button-skyblue
+	@include btn($font-color: $white, $bg-color: $btn-skyblue, $bg-darken: 5%, $border-color:darken($btn-skyblue, 15%), $border-darken: 5%)
+
+.button-yellowish-green
+	@include btn($font-color: $white, $bg-color: $btn-yellowish-green, $bg-darken: 3%, $border-color:#7da601, $border-darken: 5%)
+
+.button-orange
+	@include btn($font-color: $white, $bg-color: $btn-orange, $bg-darken: 3%, $border-color:#e25500, $border-darken: 5%)
+
+.button-dark-gray
+	@include btn($font-color: $white, $bg-color: #555, $bg-darken: 10%, $border-color:#4c4c4c, $border-darken: 8%)

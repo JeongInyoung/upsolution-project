@@ -1,0 +1,82 @@
+.ie8 #header-wrap, .ie8 #content-wrap, .ie8 #footer-wrap {
+	display: none;
+}
+.ie8 .pos-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.ie8 .pos-header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	overflow: hidden;
+	background: #f8f8f8;
+}
+.ie8 .pos-header .caution {
+	width: 960px;
+	color: #555;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 10px 50px;
+	margin: 0 auto;
+	background: url(../../images/ie/exclamation.gif) 5px no-repeat;
+}
+.ie8 .pos-header .caution a {
+	color: #e71210;
+}
+.ie8 .pos-header .caution a span {
+	font-size: 11px;
+}
+.ie8 .pos-contant {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #fff;
+}
+.ie8 .pos-contant h1 {
+	line-height: 40px;
+	padding-bottom: 20px;
+}
+.ie8 .pos-contant p {
+	font-size: 12px;
+	color: #555;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.ie8 .pos-contant ul {
+	margin: 0;
+	padding: 0;
+}
+.ie8 .pos-contant ul li {
+	display: inline-block;
+	margin-right: 6px;
+}
+.ie8 .pos-footer {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background: $bg-common;
+}
+.ie8 .pos-footer p {
+	font-size: 12px;
+	color: #777;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 20px;
+	padding-top: 30px;
+}
+.ie8 .login-box {
+	color: #555;
+	margin-bottom: 20px;
+	[class^="icon-"] {
+		font-size: 16px;
+		color: #555;
+		vertical-align: bottom;
+		margin-right: 6px;
+	}
+}

@@ -1,0 +1,59 @@
+// rem font-size with pixel fallback
+@function calculateRem($size)
+	$remSize: $size / 16px
+	@return #{$remSize}rem
+	
+=fontSize($size)
+	font-size: $size
+	font-size: calculateRem($size)
+
+// box dicide
+=box-divide($div1-num, $div1-position, $div2-num, $div2-position, $h3-mb, $mt, $text-align)
+	.row
+		> div:nth-child(1)
+			+grid-span($div1-num, $div1-position)
+			h3
+				margin-bottom: $h3-mb
+		> div:nth-child(2)
+			+grid-span($div2-num, $div2-position)
+			margin-top: $mt
+			text-align: $text-align
+
+=placeholder($color)
+	&::-webkit-input-placeholder
+		color: $color
+	&:-moz-placeholder
+		//Firefox 18-
+		color: $color
+	&::-moz-placeholder
+		//Firefox 19+
+		color: $color
+	&:-ms-input-placeholder
+		color: $color
+	
+=ordered-list
+	ol 
+		li 
+			padding-bottom: 12px
+			&:last-child
+				padding-bottom: 0
+			h4
+				position: relative
+				padding-left: 34px
+				[class^="icon-"]
+					position: absolute
+					top: 6px
+					left: 0
+					color: $font-orange
+					font-size: 26px
+					vertical-align: middle
+				span
+					position: absolute
+					top: 8px
+					left: 7px
+					font-size: 14px
+					font-weight: bold
+					color: $white
+			p
+				padding-left: 34px
+				padding-bottom: 0

@@ -1,0 +1,92 @@
+// =======================================
+// ImU  Site Font System Guide
+// =======================================
+
+// Font Base
+html
+	&:lang(ko) body
+		font: 13px/1.5 $imu-font-ko
+	&:lang(en) body
+		font: 15px/1.5 $imu-font-en
+
++breakpoint($tablet)
+	html
+		&:lang(ko) body
+			font: 15px/1.5 $imu-font-ko
+		&:lang(en) body
+			font: 17px/1.5 $imu-font-en
+
++breakpoint($wide)
+	html
+		&:lang(ko) body
+			font: 16px/1.5 $imu-font-ko
+		&:lang(en) body
+			font: 18px/1.5 $imu-font-en
+
+// Heading Font
+h2
+	+fontSize(36px)
+	line-height: 1.5
+h3
+	+fontSize(18px)
+	color: $gray-dark
+	line-height: 1.5
+h4
+	+fontSize(14px)
+	font-weight: normal
+h5
+	+fontSize(12px)
+	font-weight: normal
+
++breakpoint($tablet)
+	h2
+		font-size: 45px
+		line-height: 1.5
+		font-weight: normal
+	h3
+		font-size: 26px
+		line-height: 1.5
+		font-weight: normal
+	h4
+		font-size: 18px
+		font-weight: normal	
+	h5
+		font-size: 16px
+		font-weight: normal	
+
++breakpoint($wide)
+	h2
+		font-size: 60px
+		line-height: 1.5
+		font-weight: normal
+	h3
+		font-size: 30px
+		line-height: 2
+		font-weight: normal
+	h4
+		font-size: 24px
+		font-weight: normal
+	h5
+		font-size: 18px
+		font-weight: normal
+
+// Layout Top Style Font
+=sub-title
+	margin-bottom: 10px
+	[class^="icon-"]
+		vertical-align: middle
+		margin-right: 10px
+
+=top-title
+	color: $white
+	text-align: right
+	line-height: 140px
+		
+// =======================================
+// ImU  Site Top and Bottom Gap Guide
+// =======================================
+=gap-t-b-72
+	padding: 72px 0
+
+=gap-t-b-48
+	padding: 48px 0

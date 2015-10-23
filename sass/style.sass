@@ -1,0 +1,63 @@
+@charset "utf-8"
+
+// =======================================
+// import
+// =======================================
+@import "compass"
+@import "breakpoint"
+@import "singularitygs"
+// =======================================
+// Singularitugs Options
+// =======================================
+// +sgs-change("debug", true) (오류체크)
+
+// =======================================
+// Media Queries Variables
+// =======================================
+$mobile: 480px
+$tablet: 768px
+$desktop: 960px
+$wide: 1040px
+
+// =======================================
+// Breakpoint Options
+// =======================================
++add-grid(4)
++add-grid(6 at $mobile)
++add-grid(9 at $tablet)
++add-grid(12 at $desktop)
++add-grid(12 at $wide)
+
++add-gutter(.5)
++add-gutter(.10 at $mobile)
++add-gutter(.15 at $tablet)
++add-gutter(.20 at $desktop)
++add-gutter(.25 at $wide)
+
+/***************************************************
+  **  Base Design
+  ***************************************************/
+@import "mixin/common"
+@import "base/common"
+@import "base/base"
+@import "base/web-fonts"
+@import "base/select"
+
+/***************************************************
+  **  Mixin Design
+  ***************************************************/
+@import "mixin/button"
+@import "mixin/font-guide"
+
+/***************************************************
+  **  Desktop layout
+  ***************************************************/
+@import "layout/layout"
+@import "layout/main"
+@import "layout/sub"
+@import "layout/popup"
+
+/***************************************************
+  **  IE layout
+  ***************************************************/
+@import "ie/ie8"
